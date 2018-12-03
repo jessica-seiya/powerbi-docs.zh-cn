@@ -25,36 +25,36 @@ ms.locfileid: "51223298"
 
 不过，并不是只能使用这组视觉对象，选择省略号可以打开其他报表视觉对象源，即自定义视觉对象。
 
-开发人员使用自定义视觉对象 SDK 创建自定义视觉对象，使业务用户可以使用最适合业务的方式查看他们的数据。 然后，报表作者可以将自定义视觉对象文件导入报表，并将它们用作任何其他 Power BI 视觉对象。 自定义视觉对象是 Power BI 中的“一等公民”，可以对其执行筛选、突出显示、编辑和共享等操作。
+开发人员使用自定义视觉对象 SDK 创建自定义视觉对象，使业务用户可以使用最符合业务需求的方式查看他们的数据。报表作者可以将自定义视觉对象文件导入报表，并像任何其他 Power BI 视觉对象一样来使用他们。 自定义视觉对象是 Power BI 中的“一等公民”，可以对其执行筛选、突出显示、编辑和共享等操作。
 
 自定义视觉对象可以采用 3 种部署形式：
 
 * 自定义视觉对象文件
-* 组织视觉对象
-* 市场视觉对象
+* 组织级视觉对象
+* 市场级视觉对象
 
 ## <a name="custom-visual-files"></a>自定义视觉对象文件
 
-自定义视觉对象是包含用于呈现数据的代码的包，其中此数据为自定义视觉对象服务。 任何人都可以创建自定义视觉对象并将其打包为可导入 Power BI 报表的单个 `.pbiviz` 文件。
+自定义视觉对象是包含用于呈现数据的代码的包来为数据提供自定义视觉服务。 任何人都可以创建自定义视觉对象并将其打包为可导入 Power BI 报表的单个 `.pbiviz` 文件。
 
 > [!WARNING]
-> 自定义视觉对象可包含存在安全或隐私风险的代码；在将其导入报表之前，请务必信任自定义视觉对象的作者和来源。
+> 自定义视觉对象可包含存在安全或隐私风险的代码；在将其导入报表之前，请务必确认你可以信任自定义视觉对象的作者和来源。
 
-## <a name="organization-visuals"></a>组织视觉对象
+## <a name="organization-visuals"></a>组织级视觉对象
 
-Power BI 管理员可以将自定义视觉对象部署到他们的组织中，使报表作者可以轻松发现和使用管理员已批准在组织内使用的自定义视觉对象。 随即，对于选择要在组织中部署的特定自定义视觉对象，以及选择一种简便方法来管理（例如，更新版本、禁用/启用）此类视觉对象，管理员拥有控制权。 对于报表作者而言，这是发现对组织唯一的视觉对象以及对更新这些视觉对象的无缝支持的一种简便方法。
+Power BI 管理员可以将自定义视觉对象部署到他们的组织中，使报表作者可以轻松发现和使用管理员已批准在组织内使用的自定义视觉对象。 管理员有权限选择要在组织中部署的特定自定义视觉对象，以及设定一种简便的方法来管理（例如，更新版本、禁用/启用）此类视觉对象。 对于报表作者而言，这是一种很简单的发现组织中独特使用的视觉对象以及对这些视觉对象进行无缝更新的方法。
 
 若要详细了解组织自定义视觉对象，可[详细了解组织视觉对象](power-bi-custom-visuals-organization.md)。
 
-## <a name="marketplace-visuals"></a>市场视觉对象
+## <a name="marketplace-visuals"></a>市场级视觉对象
 
-社区成员以及 Microsoft 已经将自定义视觉对象公开发布到 [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) 市场。 可以下载这些视觉对象，并将它们添加到 Power BI 报表。 所有这些自定义视觉对象都已经过测试并通过 Microsoft 的功能和质量批准。
+社区成员包括 Microsoft 将自定义视觉对象公开发布到 [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) 市场。 可以下载这些视觉对象，并将它们添加到 Power BI 报表中。 所有这些自定义视觉对象都已经通过测试并获得 Microsoft 的功能和质量批准。
 
-什么是 [AppSource](developer/office-store.md)？ 简而言之，可以在其中查找 Microsoft 软件的应用、加载项和扩展。 [AppSource](https://appsource.microsoft.com/en-us/) 为 Office 365、Azure、Dynamics 365、Cortana 和 Power BI 等产品的数百万用户提供解决方案，帮助他们更高效、更有见地或更为完美地完成工作。
+什么是 [AppSource](developer/office-store.md)？ 简而言之，可以在其中查找 Microsoft 软件相关的应用、加载项和扩展。 [AppSource](https://appsource.microsoft.com/en-us/) 为 Office 365、Azure、Dynamics 365、Cortana 和 Power BI 等产品的数百万用户提供解决方案，帮助他们更高效、更有见地、更为完美地完成工作。
 
 ### <a name="certified-visuals"></a>已认证的视觉对象
 
-Power BI 取得认证的视觉对象是已通过其他严格质量测试的市场视觉对象，支持用于其他情形，如[电子邮件订阅](https://docs.microsoft.com/power-bi/service-report-subscribe)和[导出到 PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint)。
+Power BI 取得认证的视觉对象是指已通过额外严格质量测试的市场视觉对象，可被用于其他情形，如[电子邮件订阅](https://docs.microsoft.com/power-bi/service-report-subscribe)和[导出到 PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint)。
 若要查看已认证的自定义视觉对象列表或提交你自己的自定义视觉对象，请参阅[已认证的自定义视觉对象](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified)。
 
 你是 Web 开发者吗？对创建自己的可视化效果，并将它们添加到 AppSource 感兴趣吗？ 请参阅[开发 Power BI 自定义视觉对象](developer/custom-visual-develop-tutorial.md)，了解如何[将自定义视觉对象发布到 AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals)。
